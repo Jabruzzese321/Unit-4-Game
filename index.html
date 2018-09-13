@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector Game</h1>
+	</div>
+	<div class="rules">
+		<h3>How to play:</h3>
+		<ol>
+			<li>When the game starts you will be given a number that you want your score to equal.</li>
+			<li>Below you will find four different crystals:</li>
+			<ul>
+				<li class=list id="green">Green</li>
+				<li class=list id="red">Red</li>
+				<li class=list id="yellow">Yellow</li>
+				<li class=list id="blue">Blue</li>
+            </ul>
+            <br>
+            <li>When you click on a crystal, points will be added to your score.</li>
+            <li>Each crystal will have a different value that is unknown until you click on it.</li>
+			<li>To win you need to match "Your Score" to the "Score to Reach"</li>
+			<li>You will lose the game if you go over the "Score to Reach"</li>
+			<li>When the game is restarted, each crystal will have a new random value.</li>
+		</ol>
+    </div>
+    <div class="gems">
+		<img src="assets/images/Green.png" class=gemImage id="gem-one" alt="Green Gem">
+		<img src="assets/images/Red.png" class=gemImage id="gem-two" alt="Red Gem">
+		<img src="assets/images/Yellow.png" class=gemImage id= "gem-three" alt="Yellow Gem">
+		<img src="assets/images/Blue.png" class=gemImage id= "gem-four" alt="Blue Gem">
+	</div>
+	<div class="numberToMatch">
+		<h2>Score to Reach:
+			<span id= "scoreToReach"></span>
+		</h2>
+    </div>
+    <div class="userScore">
+		<h2>Your Score:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<div class="attempts">
+		<h2>Wins:
+			<span id= "wins"></span>
+			Losses: 
+			<span id= "losses"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
