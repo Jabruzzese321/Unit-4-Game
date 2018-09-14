@@ -1,9 +1,15 @@
+.center-div {
+	margin: 10px auto;
+}
 body{
-	background-image: url("../images/Background.jpg");
+	background: url("../images/Background.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
 }
 div{
 	background-color: lightgrey;
-	margin: 10px;
     width: 25%;
     border: solid 2px black;
 	padding: 10px;
@@ -58,5 +64,18 @@ ul {
 }
 .gemImage{
 	height: 60px;
-	margin: 10px;
+	margin: 13px;
+}
+section {
+	width: 45%;
+	height: 200px;
+}
+.results {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.results > div {
+    flex: 0 0 28%;
+	margin: 5px;
 }

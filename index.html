@@ -8,10 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div class="header">
+	<div class="header center-div">
 		<h1>Crystal Collector Game</h1>
 	</div>
-	<div class="rules">
+	<div class="rules center-div">
 		<h3>How to play:</h3>
 		<ol>
 			<li>When the game starts you will be given a number that you want your score to equal.</li>
@@ -30,29 +30,31 @@
 			<li>When the game is restarted, each crystal will have a new random value.</li>
 		</ol>
     </div>
-    <div class="gems">
+    <div class="gems center-div">
 		<img src="assets/images/Green.png" class=gemImage id="gem-one" alt="Green Gem">
 		<img src="assets/images/Red.png" class=gemImage id="gem-two" alt="Red Gem">
 		<img src="assets/images/Yellow.png" class=gemImage id= "gem-three" alt="Yellow Gem">
 		<img src="assets/images/Blue.png" class=gemImage id= "gem-four" alt="Blue Gem">
 	</div>
-	<div class="numberToMatch">
-		<h2>Score to Reach:
-			<span id= "scoreToReach"></span>
-		</h2>
-    </div>
-    <div class="userScore">
-		<h2>Your Score:
-			<span id="finalTotal"></span>
-		</h2>
-	</div>
-	<div class="attempts">
-		<h2>Wins:
-			<span id= "wins"></span>
-			Losses: 
-			<span id= "losses"></span>
-		</h2>
-	</div>
+	<section class="center-div results">
+		<div class="numberToMatch">
+			<h2>Score to Reach:
+				<span id= "scoreToReach"></span>
+			</h2>
+		</div>
+		<div class="userScore">
+			<h2>Your Score:
+				<span id="finalTotal"></span>
+			</h2>
+		</div>
+		<div class="attempts">
+			<h2>Wins:
+				<span id= "wins"></span>
+				Losses: 
+				<span id= "losses"></span>
+			</h2>
+		</div>
+	</section>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>

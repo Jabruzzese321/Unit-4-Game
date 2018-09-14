@@ -17,12 +17,12 @@ $( document ).ready(function(){
       $('#wins').text(wins);
       reset();
     }
-    function loss(){
+  function loss(){
     alert ("Sorry you went over your number, play again!");
       losses++;
       $('#losses').text(losses);
       reset()
-    }
+  }
   function reset(){
         Random=Math.floor(Math.random()*70+30);
         console.log(Random)
@@ -34,7 +34,6 @@ $( document ).ready(function(){
         userScore= 0;
         $('#finalTotal').text(userScore);
         } 
-  //sets up click for jewels
     $('#gem-one').on ('click', function(){
       userScore = userScore + num1;
       console.log("New userScore= " + userScore);
